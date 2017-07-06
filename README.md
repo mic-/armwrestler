@@ -20,15 +20,15 @@ Notation
 --------
 Some terms are used in the program that may require explanations:
 
-Rd	Destination register
-Rn	Base address register
-MEM	A value previously written to memory
+* Rd	Destination register
+* Rn	Base address register
+* MEM	A value previously written to memory
 
 	
-`+#]`	Pre-increment with immediate offset
-`-R]!`	Pre-decrement with register offset and writeback
-`]+R`	Post-increment with register offset
-...and so on
+* +#]	Pre-increment with immediate offset
+* -R]!	Pre-decrement with register offset and writeback
+* ]+R	Post-increment with register offset
+* ...and so on
 
 
 Hints
