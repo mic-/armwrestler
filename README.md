@@ -25,9 +25,9 @@ Rn	Base address register
 MEM	A value previously written to memory
 
 	
-+#]	Pre-increment with immediate offset
--R]!	Pre-decrement with register offset and writeback
-]+R	Post-increment with register offset
+`+#]`	Pre-increment with immediate offset
+`-R]!`	Pre-decrement with register offset and writeback
+`]+R`	Post-increment with register offset
 ...and so on
 
 
@@ -36,13 +36,13 @@ Hints
 These are some things to look for if you are getting errors in any of
 the tests.
 
-For all instructions using the barrel shifter: Make sure the special cases
+* For all instructions using the barrel shifter: Make sure the special cases
 are handled correctly. That is, shifts by zero, register-specified shift
 amounts larger than 31, and so on.
 
-For LDR instructions: Make sure word-sized loads from unaligned addresses
+* For LDR instructions: Make sure word-sized loads from unaligned addresses
 are handled correctly. Make sure the case when Rd==Rn is handled correctly.
 
-For STR instructions: Make sure the case when storing R15 is handled correctly.
+* For STR instructions: Make sure the case when storing R15 is handled correctly.
 
-For LDM instructions: Make sure writeback is done at the right time.
+* For LDM instructions: Make sure writeback is done at the right time.
